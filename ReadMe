@@ -1,4 +1,4 @@
-（一）我刚刚学习go没几天，以下是一点总结和感慨
+（一）以下是我刚开始几天学习go中的一点总结和感慨
     一、Go语言诞生的背景
         google旗下的大牛，从复杂有庞大的google项目整理编译运行中的到启发而开发的一种静态强类型、编译型语言。
         Go 语言语法与 C 相近，但功能上有：内存安全，GC（垃圾回收），结构形态及 CSP-style 并发计算
@@ -11,7 +11,14 @@
             如果对主题有要求的，可以根据个人喜好自己编写\liteide\share\liteide\liteeditor\color\your.xml
             我个人用的liteeditor编辑主题是选择它提供的sumblime-bold.xml。还有就是有关交叉编译的问题（实际就是根据需求gcc【这里是编译器】编译成可以在指定系统下运行的文件exe）
             ② VS code这款支持多语言的插件丰富的工具，我是看cn官网推荐的，所以也试了一下。它主要是依赖于丰富的插件。
-            界面相对简约，项目文件展示窗口（move，rename，create）、调试等个人感觉挺好（若是新手的话，个人不推荐使用它，因为我用的时候是配合terminal中的go command使用的）   
+            界面相对简约，项目文件展示窗口（move，rename，create）、调试等个人感觉挺好（若是新手的话，个人不推荐使用它，因为我用的时候是配合terminal中的go command使用的）  
+            VS code中有关go插件：gopkgs  go-outline  go-symbols  guru  gorename  gotests  gomodifytags  impl  fillstruct  goplay  godoctor  dlv  gocode-gomod  godef  goreturns 
+            VS code中项目启动配置是以Jason文件形式：其中program配置的几种情况
+                //${fileDirname}  Debug all files in the directory where the current file resides
+                //${workspaceRoot} Configure with the package name as the starting point
+                //${workspaceFolder} Debugging VS Code opens all the files in the root directory of the workspace
+                //${file} Debug the current file
+                "program": "${fileDirname}"
     四、Go使用（Windows）
         I go env 即go环境，这里我主要是参考cn官网边看便体会的。安装go之后有个gopath的概念，简单来看就是一个为了方便我们便是的workspace（包含bin、pkg、src这个顾名思义）
         Ⅱ go项目开发时，需要一些像数据库驱动、外部模块包等等依赖时，就需要用到go get 指令，但是有些依赖没办法下载（国外），所以我们把下载的代理修改一下。修改指令go env -u GO111MODULE=on
