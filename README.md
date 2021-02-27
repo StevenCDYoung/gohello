@@ -1,6 +1,6 @@
 # （一）以下是我初始几天学习go中的一点总结和感慨
 ## 一、Go语言诞生的背景
-### google旗下的大牛，从复杂有庞大的google项目整理编译运行中的到启发而开发的一种静 态强类型、编译型语言。### Go 语言语法与 C 相近，但功能上有：内存安全，GC（垃圾回收），结构形态及 CSP-style 并发计算
+### google旗下的大牛，从复杂有庞大的google项目整理编译运行中的到启发而开发的一种静 态强类型、编译型语言。 Go 语言语法与 C 相近，但功能上有：内存安全，GC（垃圾回收），结构形态及 CSP-style 并发计算
 ## 二、Go基础语法
 ### 菜鸟教程 https://www.runoob.com/go/go-tutorial.html
 ###  cn官网文档 https://golang.google.cn/doc/
